@@ -22,7 +22,9 @@ struct OnboardingView: View {
     @State private var indicatorOpacity : Double = 1.0
     @State private var textTitle : String = "Share."
     
-    //MARK:- BODY
+    let hapticsFeedback = UINotificationFeedbackGenerator()
+    
+    //MARK: - BODY
     
     
     var body: some View {
@@ -31,7 +33,7 @@ struct OnboardingView: View {
                 .ignoresSafeArea(.all, edges: .all)
             
             VStack(spacing: 20){
-                //MARK:- HEADER
+                //MARK: - HEADER
                 
                                   Spacer()
                 VStack(spacing: 0){
@@ -55,7 +57,7 @@ struct OnboardingView: View {
                 .offset(y: isAnimating ? 0 : -40)
                 .animation(.easeOut(duration: 1), value: isAnimating)
                 
-                //MARK:- CENTER
+                //MARK: - CENTER
                 ZStack{
                     CircleGroupView(ShapeColor: .white, ShapeOpacity: 0.5)
                         .offset(x: imageOffset.width * -1)
@@ -104,7 +106,7 @@ struct OnboardingView: View {
                 ,alignment: .bottom)
                 Spacer()
                 
-                //MARK:- FOOTER
+                //MARK:  - FOOTER
                 ZStack{
                     //1. BACKGROUND
                     Capsule()
@@ -151,9 +153,12 @@ struct OnboardingView: View {
                                 .onEnded{ _ in
                                     withAnimation(Animation.easeOut(duration: 0.4)){
                                         if buttonOffset > buttonWidth / 2{
+                                            hapticsFeedback.notificationOccurred(.success)
+                                            playSound(sound: "chimeup", type: "mp3")
                                              buttonOffset = buttonWidth - 80
                                             isOnboardingViewActive = false
                                         }else{
+                                            hapticsFeedback.notificationOccurred(.warning)
                                         buttonOffset = 0
                                        
                                         }
@@ -178,7 +183,7 @@ struct OnboardingView: View {
         .preferredColorScheme(.dark)
     }
 }
-    //MARK:- PREVIEW
+    //MARK: - PREVIEW
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
