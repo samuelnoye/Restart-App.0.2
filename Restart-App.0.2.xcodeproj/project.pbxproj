@@ -12,7 +12,6 @@
 		D5CF9787275FC2B50075C6B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CF9786275FC2B50075C6B3 /* Preview Assets.xcassets */; };
 		D5CF978E275FC3910075C6B3 /* SwiftUI-App-Workbook-Restart.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D5CF978D275FC3910075C6B3 /* SwiftUI-App-Workbook-Restart.pdf */; };
 		D5CF9797275FC4390075C6B3 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF9796275FC4390075C6B3 /* CircleGroupView.swift */; };
-		D5CF979C275FC53E0075C6B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF9799275FC53E0075C6B3 /* ContentView.swift */; };
 		D5CF979D275FC53E0075C6B3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF979A275FC53E0075C6B3 /* HomeView.swift */; };
 		D5CF979E275FC53E0075C6B3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF979B275FC53E0075C6B3 /* OnboardingView.swift */; };
 		D5CF97A12760D7D60075C6B3 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF97A02760D7D60075C6B3 /* AudioPlayer.swift */; };
@@ -20,6 +19,7 @@
 		D5CF97A62760FB640075C6B3 /* Simulator Screen Shot - iPhone 11 - 2021-12-08 at 14.35.28.png in Resources */ = {isa = PBXBuildFile; fileRef = D5CF97A42760FB640075C6B3 /* Simulator Screen Shot - iPhone 11 - 2021-12-08 at 14.35.28.png */; };
 		D5CF97A92760FC170075C6B3 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D5CF97A82760FC170075C6B3 /* success.m4a */; };
 		D5CF97AB2760FC230075C6B3 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5CF97AA2760FC230075C6B3 /* chimeup.mp3 */; };
+		D5CF97D227612B650075C6B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF97D127612B650075C6B3 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,6 @@
 		D5CF9786275FC2B50075C6B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D5CF978D275FC3910075C6B3 /* SwiftUI-App-Workbook-Restart.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SwiftUI-App-Workbook-Restart.pdf"; sourceTree = "<group>"; };
 		D5CF9796275FC4390075C6B3 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
-		D5CF9799275FC53E0075C6B3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../Restart-App-01/Shared/Screens/ContentView.swift"; sourceTree = "<group>"; };
 		D5CF979A275FC53E0075C6B3 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D5CF979B275FC53E0075C6B3 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		D5CF97A02760D7D60075C6B3 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		D5CF97A42760FB640075C6B3 /* Simulator Screen Shot - iPhone 11 - 2021-12-08 at 14.35.28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 11 - 2021-12-08 at 14.35.28.png"; sourceTree = "<group>"; };
 		D5CF97A82760FC170075C6B3 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		D5CF97AA2760FC230075C6B3 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		D5CF97D127612B650075C6B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,9 @@
 		D5CF9798275FC4E70075C6B3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				D5CF9799275FC53E0075C6B3 /* ContentView.swift */,
 				D5CF979A275FC53E0075C6B3 /* HomeView.swift */,
 				D5CF979B275FC53E0075C6B3 /* OnboardingView.swift */,
+				D5CF97D127612B650075C6B3 /* ContentView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CF9797275FC4390075C6B3 /* CircleGroupView.swift in Sources */,
-				D5CF979C275FC53E0075C6B3 /* ContentView.swift in Sources */,
+				D5CF97D227612B650075C6B3 /* ContentView.swift in Sources */,
 				D5CF979E275FC53E0075C6B3 /* OnboardingView.swift in Sources */,
 				D5CF979D275FC53E0075C6B3 /* HomeView.swift in Sources */,
 				D5CF9780275FC2B30075C6B3 /* Restart_App_0_2App.swift in Sources */,
