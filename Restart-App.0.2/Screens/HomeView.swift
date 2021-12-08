@@ -48,7 +48,9 @@ struct HomeView: View {
             
             
             Button(action:{
-            isOnboardingViewActive = true
+                withAnimation {
+                    isOnboardingViewActive = true
+                } 
             }){
                 Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
                     .imageScale(.large)
@@ -62,7 +64,9 @@ struct HomeView: View {
             .controlSize(.large)
         }//: VStack
         .onAppear(perform: {
-            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                isAnimating = true
+            })
         })
 }
     //MARK:-
