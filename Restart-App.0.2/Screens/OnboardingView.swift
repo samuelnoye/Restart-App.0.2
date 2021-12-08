@@ -20,6 +20,7 @@ struct OnboardingView: View {
     false
     @State private var imageOffset: CGSize = .zero
     @State private var indicatorOpacity : Double = 1.0
+    @State private var textTitle : String = "Share."
     
     //MARK:- BODY
     
@@ -34,10 +35,11 @@ struct OnboardingView: View {
                 
                                   Spacer()
                 VStack(spacing: 0){
-                    Text("Share.")
+                    Text(textTitle )
                         .font(.system(size: 60))
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
+                        .transition(.opacity)
                     Text("""
                      It's not how much we give but
                      how much love we put into giving.
@@ -74,6 +76,7 @@ struct OnboardingView: View {
                                         imageOffset = gesture.translation
                                         withAnimation(.linear(duration: 0.2)){
                                             indicatorOpacity = 0
+                                            textTitle = "Give."
                                         }
                                     }
                                     }
@@ -81,6 +84,8 @@ struct OnboardingView: View {
                                         imageOffset = .zero
                                     withAnimation(.linear(duration: 0.25)){
                                         indicatorOpacity = 1
+                                        textTitle = "Share."
+
                                     }
                                 }
                         )
