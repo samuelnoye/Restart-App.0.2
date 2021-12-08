@@ -20,7 +20,7 @@ struct HomeView: View {
             //MARK: - HEADER
             Spacer()
             ZStack{
-                CircleGroupView(ShapeColor: .gray, ShapeOpacity: 0.5)
+                CircleGroupView(ShapeColor: Color("ColorBlue"), ShapeOpacity: 0.5)
              Image("character-2")
                 .resizable()
                 .scaledToFit()
@@ -63,22 +63,3 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
-
-//struct CircleGroupView: View {
-//    //MARK: - PROPERTY
-//
-//    @Binding var ShapeColor: Color
-//    @Binding var ShapeOpacity: Double
-//
-//    //MARK: - BODY
-//    var body: some View {
-//        ZStack{
-//            Circle()
-//                .stroke(ShapeColor.opacity(ShapeOpacity),lineWidth: 40)
-//                .frame(width: 260, height: 260, alignment: .center)
-//            Circle()
-//                .stroke(ShapeColor.opacity(ShapeOpacity),lineWidth: 80)
-//                .frame(width: 260, height: 260, alignment: .center)
-//        }
-//    }
-//}
