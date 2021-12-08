@@ -81,6 +81,14 @@ struct OnboardingView: View {
                         .animation(.easeOut(duration: 1), value: imageOffset)
                     
                 }
+                .overlay(
+                Image(systemName: "arrow.left.and.right.circle")
+                    .font(.system(size: 44, weight: .ultraLight))
+                    .foregroundColor(.white)
+                    .offset(y: 20)
+                    .opacity(isAnimating ? 1 : 0)
+                    .animation(.easeOut(duration: 1).delay(2),  value: isAnimating)
+                ,alignment: .bottom)
                 Spacer()
                 
                 //MARK:- FOOTER
