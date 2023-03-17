@@ -6,6 +6,7 @@ COMPLEX SWIFTUI GESTURES We will create such a custom button with complex gestur
 
 
 
+PARALLAX EFFECT By using multiple movements in the opposite direction (parallax effect) we can add depth to this amazing onboarding screen.
 
 ![image](https://user-images.githubusercontent.com/82453244/145226838-21b8dd84-109d-4573-9d80-2d3d6f8b7eb5.png)
 ![image](https://user-images.githubusercontent.com/82453244/145226955-b2e0734e-1ddf-4d94-b1bb-5a0eca41ebf4.png)
